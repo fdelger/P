@@ -139,7 +139,6 @@
             
             $getContact = Contact::getContact($xmlcont->firstname,$xmlcont->lastname,
                 $xmlcont->email,$xmlcont->address,$xmlcont->phone);
-            echo $getContact->getPhone();
             
             // Basic Required Information check
             
@@ -153,7 +152,7 @@
                   echo "Invalid email format. Please fix and try again."; 
               } else {
                 
-                 echo "Valid Email Address! Creating Contact";
+                 echo "Valid Email Address! Creating Contact ";
                  $first = $getContact->getFirst();
                  $last = $getContact->getLast();
                  $addr = $getContact->getAddr();

@@ -1,0 +1,11 @@
+I used phpmyadmin to create the database and set the characteristics. It wrote out the SQL for me when doing so. So I never saved it the first time.
+I did it again, after I read the end of your pdf file asking for the statement, a second time so that I could save the SQL here for you. 
+
+CREATE TABLE `exercise`.`contact` ( 
+    `contact_id` INT NOT NULL AUTO_INCREMENT , 
+    `firstname` VARCHAR(20) NOT NULL , 
+    `lastname` VARCHAR(20) NOT NULL , 
+    `address` VARCHAR(45) NULL , 
+    `email` VARCHAR(60) NOT NULL , 
+    `phone` VARCHAR(15) NULL , 
+    PRIMARY KEY (`contact_id`)) ENGINE = InnoDB;
